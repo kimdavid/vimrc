@@ -1,5 +1,5 @@
 syntax on
-colorscheme desert
+colorscheme elflord
 
 set expandtab       " Set tabs to spaces
 set shiftwidth=4    " Indents havea width of 4
