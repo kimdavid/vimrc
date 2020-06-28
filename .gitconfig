@@ -1,0 +1,14 @@
+# This is Git's per-user configuration file.
+[user]
+  name = David Kim
+  email = dongyoungdavid@gmail.com
+
+[alias]
+  s = status
+  a = add
+  c = commit
+  r = remote
+  d = diff
+  l = log
+  b = branch
+  co = checkout
