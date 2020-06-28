@@ -1,19 +1,47 @@
-syntax on
+" Enable modern Vim features not compatible with Vi spec.
+set nocompatible
+
+" Set color scheme.
 colorscheme elflord
 
-set expandtab       " Set tabs to spaces
-set shiftwidth=4    " Indents havea width of 4
-set softtabstop=4   " Sets the number of columns for a tab
-set tabstop=4       " Tabs appear as 4 spaces
-set autoindent      " Auto indents
-set number          " Line number
-set backspace=indent,eol,start " Enable backspace
-set ruler
-set statusline=%<%f\ %h%m%r%y%=%-14.(%l,%c%V%)\ %P
-set laststatus=2
-set noswapfile
+" Enable mouse for scrolling and resizing.
 set mouse=a
+
+" Turn on syntax highlighting.
+syntax on
+
+" Show line number and column at bottom right.
+set ruler
+
+" Show status bar.
+set laststatus=2
+
+" Print the line number in front of each line.
+set number
+
+" Enable line wrapping.
+set wrap
+
+" Minimum number of screen lines above and below cursor.
+set scrolloff=20
+
+" Highlight all search matches.
 set hlsearch
 
-nmap <silent> <F2> :tabprev<CR>
-nmap <silent> <F3> :tabnext<CR>
+" Ignore case when searching.
+set ignorecase
+
+" Switch search to case-sensitive when search query contains an uppercase.
+set smartcase
+
+" Convert tabs to spaces.
+set expandtab
+
+" New lines inherit the indentation of previous lines.
+set autoindent
+
+" When shifting (>> or <<), indent using 2 spaces.
+set shiftwidth=2
+
+" Pressing tab will insert 2 spaces.
+set tabstop=2
