@@ -13,6 +13,9 @@ syntax on
 " Show line number and column at bottom right.
 set ruler
 
+" Red vertical line at 100th column.
+set colorcolumn=100
+
 " Show status bar.
 set laststatus=2
 
@@ -45,3 +48,10 @@ set shiftwidth=2
 
 " Pressing tab will insert 2 spaces.
 set tabstop=2
+
+" Highlight rather than underline.
+hi CursorLine cterm=NONE ctermbg=238 ctermfg=NONE
+hi CursorColumn cterm=NONE ctermbg=238 ctermfg=NONE
+
+" Press 'H' to toggle row and column highlighting.
+nnoremap H :set cursorline! cursorcolumn!<CR>
