@@ -12,3 +12,5 @@
   l = log
   b = branch
   co = checkout
+  pu = push
+  pl = pull
